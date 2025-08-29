@@ -1,0 +1,26 @@
+<html>
+<head>
+<style type="text/css">
+body {
+  background-image: url('questbg.jpg');
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<title>resultado do questionário</title>
+</head>
+
+<body>
+<div class="results">
+<img src="titulor.png" style="width: 500px;">
+<div id="divResultado"></div>
+</div>
+
+<script>
+const resultados = localStorage.getItem('quizResultado');
+if (resultados) {
+  document.getElementById('divResultado').innerHTML = resultados;
+}
+</script>
+</body>
+</html>
